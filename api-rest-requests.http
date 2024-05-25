@@ -1,0 +1,16 @@
+#-*- restclient -*-
+
+# Get root
+GET http://localhost:3000/
+
+# Get todos
+GET http://localhost:3000/todos
+
+# Post todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{"name":"Code some JS"}
+
+# Get todo id 1
+GET http://localhost:3000/todos/2
